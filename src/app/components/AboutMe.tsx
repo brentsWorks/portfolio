@@ -148,7 +148,7 @@ export default function MeSection() {
             <Button
               variant="outlined"
               color="primary"
-              href="mailto:bbrison@ucsc.edu?subject=Contact&body=Hello%20Brent,%0D%0A%0D%0A"
+              href="mailto:brentsworks@gmail.com?subject=Contact&body=Hello%20Brent,%0D%0A%0D%0A"
               sx={{
                 fontWeight: 600,
                 px: 4,
