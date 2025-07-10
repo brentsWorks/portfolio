@@ -32,20 +32,28 @@ const technicalExperiences = [
     image: '/images/iwcapital.jpeg',
   },
 ];
+
 const personalMemories = [
   {
-    employer: 'Trip to Japan',
-    role: 'Traveler',
-    dates: 'May 2023',
-    location: 'Tokyo, Kyoto, Osaka',
-    image: '/images/japan_trip.jpg',
+    employer: 'Trip to Europe',
+    role: 'Traveling with family',
+    dates: 'December 2021 - January 2022',
+    location: 'Switzerland, Italy, France',
+    image: '/images/europe_trip.jpg',
   },
   {
-    employer: 'Family Reunion',
-    role: 'Family',
-    dates: 'July 2022',
-    location: 'Lake Tahoe, CA',
+    employer: 'China Hole Loop Trail',
+    role: 'Hiking with friends',
+    dates: 'July 2025',
+    location: 'Morgan Hill, CA',
     image: '/images/family_reunion.jpg',
+  },
+  {
+    employer: 'First Jiu Jitsu Competition',
+    role: 'Competitor',
+    dates: 'June 2023',
+    location: 'San Jose, CA',
+    image: '/images/first_jiu_jitsu_competition.jpg',
   },
   // ...add more memories
 ];
@@ -64,7 +72,7 @@ export default function ExperienceSection() {
         gutterBottom
         sx={{ color: theme.palette.primary.main, fontWeight: 700, mb: { xs: 3, md: 6 }, fontSize: { xs: '1.5rem', sm: '2rem', md: '2.5rem' } }}
       >
-        {mode === 'technical' ? 'Work Experience' : 'Memories'}
+        {mode === 'technical' ? 'Work Experience' : 'Captured Memories'}
       </Typography>
       <Grid container spacing={{ xs: 2, sm: 4 }} justifyContent="center">
         {experiences.map((exp, idx) => (
