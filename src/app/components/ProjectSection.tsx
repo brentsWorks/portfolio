@@ -116,7 +116,15 @@ export default function ProjectSection() {
       </Typography>
       <Slider {...settings}>
         {projects.map((project, idx) => (
-          <Box key={idx} sx={{ px: { xs: 0.5, sm: 2 }, minWidth: 0 }}>
+          <Box
+            key={idx}
+            sx={{
+              px: { xs: 0.5, sm: 2 },
+              minWidth: 0,
+              display: { xs: 'flex', sm: 'block' },
+              justifyContent: { xs: 'center', sm: 'initial' },
+            }}
+          >
             <Card
               sx={{
                 background: theme.palette.mode === 'dark' ? 'rgba(30,41,59,0.7)' : 'rgba(255,255,255,0.7)',
@@ -127,6 +135,7 @@ export default function ProjectSection() {
                 minHeight: { xs: 260, sm: 320, md: 340 },
                 maxHeight: { xs: 320, sm: 340 },
                 width: { xs: '90vw', sm: 320, md: 340 },
+                mx: 'auto', // <-- This is key for centering
                 display: 'flex',
                 flexDirection: 'column',
                 border: `1px solid ${theme.palette.divider}`,

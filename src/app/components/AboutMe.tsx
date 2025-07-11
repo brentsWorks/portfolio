@@ -50,7 +50,7 @@ export default function MeSection() {
           alt="Profile Picture"
           sx={{ width: { xs: 120, sm: 160, md: 200 }, height: { xs: 120, sm: 160, md: 200 }, boxShadow: 4, border: `3px solid ${theme.palette.primary.main}` }}
         />
-        <Box sx={{ width: '100%', minWidth: 0 }}>
+        <Box sx={{ width: '100%', minWidth: 0, ml: { xs: 0, md: 4 } }}>
           <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 700, color: theme.palette.text.primary, textShadow: '0 2px 8px rgba(0,0,0,0.4)', fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }, textAlign: { xs: 'center', md: 'left' } }}>
             Hi, I&apos;m <span style={{ color: theme.palette.primary.main, textShadow: '0 2px 8px rgba(0,0,0,0.4)' }}>Brent</span>
           </Typography>
@@ -70,7 +70,16 @@ export default function MeSection() {
           <Typography variant="body1" sx={{ mb: 3, maxWidth: 500, color: theme.palette.text.secondary, mx: { xs: 'auto', md: 0 }, textAlign: { xs: 'center', md: 'left' } }}>
             Living a well-balanced life while fulfilling my unwavering passion for the future of technology.
           </Typography>
-          <Stack direction="row" spacing={2} sx={{ mb: 3, justifyContent: { xs: 'center', md: 'flex-start' }, flexWrap: 'wrap' }}>
+          {/* Media Buttons Stack */}
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{
+              mb: 3,
+              justifyContent: { xs: 'center', sm: 'flex-start' },
+              alignItems: { xs: 'center', sm: 'flex-start' },
+            }}
+          >
             {mode === 'technical' && (
               <>
                 <IconButton
@@ -96,35 +105,44 @@ export default function MeSection() {
               </>
             )}
             {mode === 'personal' && (
-			  <>
-              <IconButton
-                component="a"
-                href="https://www.youtube.com/@yourchannel"
-                target="_blank"
-                rel="noopener"
-                aria-label="YouTube"
-                sx={{
-                  color: theme.palette.primary.main,
-                  background: theme.palette.action.hover,
-                  '&:hover': { background: theme.palette.primary.main, color: theme.palette.background.paper }
-                }}
-              >
-                <YouTubeIcon fontSize="large" />
-              </IconButton>
-			  <IconButton
-			  component="a"
-			  href="https://www.instagram.com/brentbrison/"
-			  target="_blank"
-			  rel="noopener"
-			  aria-label="Instagram"
-			  sx={{ color: theme.palette.primary.main, background: theme.palette.action.hover, '&:hover': { background: theme.palette.primary.main, color: theme.palette.background.paper } }}
-			>
-			  <InstagramIcon fontSize="large" />
-			</IconButton>
-			</>
+              <>
+                <IconButton
+                  component="a"
+                  href="https://www.youtube.com/@yourchannel"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="YouTube"
+                  sx={{ color: theme.palette.primary.main, background: theme.palette.action.hover, '&:hover': { background: theme.palette.primary.main, color: theme.palette.background.paper } }}
+                >
+                  <YouTubeIcon fontSize="large" />
+                </IconButton>
+                <IconButton
+                  component="a"
+                  href="https://www.instagram.com/brentbrison/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Instagram"
+                  sx={{ color: theme.palette.primary.main, background: theme.palette.action.hover, '&:hover': { background: theme.palette.primary.main, color: theme.palette.background.paper } }}
+                >
+                  <InstagramIcon fontSize="large" />
+                </IconButton>
+              </>
             )}
           </Stack>
-          <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} sx={{ mb: 2, justifyContent: { xs: 'center', md: 'flex-start' }, alignItems: { xs: 'stretch', sm: 'center' }, minHeight: 56 }}>
+          {/* Action Buttons Stack */}
+          <Stack
+            direction={{ xs: 'column', sm: 'row' }}
+            spacing={2}
+            sx={{
+              mb: 2,
+              alignItems: 'center', // <-- This is the key!
+              justifyContent: { xs: 'center', sm: 'flex-start' },
+              minHeight: 56,
+              width: 'auto',
+              pl: 0,
+              ml: 0,
+            }}
+          >
             <Tooltip title="Download CV" placement="top">
               <IconButton
                 component="a"
@@ -134,8 +152,9 @@ export default function MeSection() {
                   color: theme.palette.primary.main,
                   background: theme.palette.action.hover,
                   border: `2px solid ${theme.palette.primary.main}`,
-                  width: 56,
                   height: 56,
+                  width: 56,
+                  mb: { xs: 1, sm: 0 },
                   visibility: mode === 'technical' ? 'visible' : 'hidden',
                   pointerEvents: mode === 'technical' ? 'auto' : 'none',
                   '&:hover': { background: theme.palette.primary.main, color: theme.palette.background.paper }
@@ -157,6 +176,8 @@ export default function MeSection() {
                 borderColor: theme.palette.primary.main,
                 color: theme.palette.primary.main,
                 background: theme.palette.action.hover,
+                width: { xs: '100%', sm: 'auto' },
+                mb: { xs: 0, sm: 0 },
                 visibility: mode === 'technical' ? 'visible' : 'hidden',
                 pointerEvents: mode === 'technical' ? 'auto' : 'none',
                 '&:hover': { background: theme.palette.primary.main, color: theme.palette.background.paper }
