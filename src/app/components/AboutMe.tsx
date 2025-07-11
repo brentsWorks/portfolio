@@ -106,7 +106,8 @@ export default function MeSection() {
             )}
             {mode === 'personal' && (
               <>
-                <IconButton
+                {/* TODO: Add YouTube back in */}
+                {/* <IconButton
                   component="a"
                   href="https://www.youtube.com/@yourchannel"
                   target="_blank"
@@ -116,6 +117,7 @@ export default function MeSection() {
                 >
                   <YouTubeIcon fontSize="large" />
                 </IconButton>
+                */}
                 <IconButton
                   component="a"
                   href="https://www.instagram.com/brentbrison/"
