@@ -9,7 +9,7 @@ import Tooltip from '@mui/material/Tooltip';
 import { Typewriter } from 'react-simple-typewriter';
 import { useTheme } from '@mui/material/styles';
 import { usePortfolioMode } from '../PortfolioModeContext';
-import YouTubeIcon from '@mui/icons-material/YouTube';
+// import YouTubeIcon from '@mui/icons-material/YouTube';
 
 export default function MeSection() {
   const { mode } = usePortfolioMode();
