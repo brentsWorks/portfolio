@@ -38,6 +38,13 @@ const technicalProjects = [
     description:
       'Collaborated in a team of 6 developers to build a digital solution for campus parking operations, replacing paper-based systems with streamlined online processes for vehicle registration, permit purchasing, and ticket management.',
   },
+  {
+    title: 'Aven Voice AI Support Agent',
+    date: 'July 2025',
+    image: '/images/vapi.png',
+    description:
+      'Built a voice AI assistant to reduce customer churn from scheduling conflicts in enterprise systems. Used RAG, VAPI, and GPT-4o for real-time support, with a 200ms response time. Optimized a Firecrawl + Pinecone pipeline, cutting API calls by 77% and content size by 23%.',
+  },
 ];
 const personalHobbies = [
   {
