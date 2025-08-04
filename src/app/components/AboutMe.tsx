@@ -148,7 +148,7 @@ export default function MeSection() {
             <Tooltip title="Download CV" placement="top">
               <IconButton
                 component="a"
-                href="/images/Brent_Brison_Resume.pdf"
+                href="/images/BrentBrison_Resume.pdf"
                 download
                 sx={{
                   color: theme.palette.primary.main,
