@@ -11,25 +11,18 @@ import { usePortfolioMode } from '../PortfolioModeContext';
 
 const technicalProjects = [
   {
-    title: 'GPA Prediction with Machine Learning',
-    date: 'February 2023',
-    image: '/images/GPAPredict.png',
+    title: 'LLM Router',
+    date: 'August 2025 - September 2025',
+    image: '/images/llm-router.png',
     description:
-      "Successfully developed a linear regression based machine learning program in Python to build and train a model that would predict a student's future GPA based on a given dataset.",
+      'Built a production system that uses a hybrid classification system to automatically selects optimal AI models for prompts, reducing token costs by 20-30%.'
   },
   {
-    title: 'Environmental Statistical Analysis and Data Collection',
-    date: 'April 2023',
-    image: '/images/RPI.jpg',
+    title: 'Aven AI Support Platform',
+    date: 'July 2025',
+    image: '/images/voice-agent.png',
     description:
-      'Developed an environmental data collection system using a DHT11 sensor and a Raspberry Pi 400B, integrating MariaDB for database management and writing a C-based program for intuitive, real-time statistical analysis of temperature and humidity.',
-  },
-  {
-    title: 'Tidal Disruption Analysis',
-    date: 'March 2024',
-    image: '/images/TidalDataProj.png',
-    description:
-      "Collaborated with a team of 4 to develop a Python script for simulating and analyzing Santa Cruz tidal data, identifying discrepancies caused by the Hunga Tonga-Hunga Ha'apai volcanic eruption, and finalized a Jupyter Notebook to visualize findings, revealing a significant 2 ft deviation from regular tidal patterns due to tsunami impacts.",
+      'Built a voice-based AI assistant using RAG techniques and VAPI for voice interaction, enabling real-time contextual support with 200ms average voice response time.'
   },
   {
     title: 'Virtualized Campus Parking System',
@@ -39,30 +32,44 @@ const technicalProjects = [
       'Collaborated in a team of 6 developers to build a digital solution for campus parking operations, replacing paper-based systems with streamlined online processes for vehicle registration, permit purchasing, and ticket management.',
   },
   {
-    title: 'Aven Voice AI Support Agent',
-    date: 'July 2025',
-    image: '/images/vapi.png',
+    title: 'Tidal Disruption Analysis',
+    date: 'March 2024',
+    image: '/images/TidalDataProj.png',
     description:
-      'Built a voice AI assistant to reduce customer churn from scheduling conflicts in enterprise systems. Used RAG, VAPI, and GPT-4o for real-time support, with a 200ms response time. Optimized a Firecrawl + Pinecone pipeline, cutting API calls by 77% and content size by 23%.',
+      "Collaborated with a team of 4 to develop a Python script for simulating and analyzing Santa Cruz tidal data, identifying discrepancies caused by the Hunga Tonga-Hunga Ha'apai volcanic eruption, and finalized a Jupyter Notebook to visualize findings, revealing a significant 2 ft deviation from regular tidal patterns due to tsunami impacts.",
+  },
+  {
+    title: 'Environmental Statistical Analysis and Data Collection',
+    date: 'April 2023',
+    image: '/images/RPI.jpg',
+    description:
+      'Developed an environmental data collection system using a DHT11 sensor and a Raspberry Pi 400B, integrating MariaDB for database management and writing a C-based program for intuitive, real-time statistical analysis of temperature and humidity.',
+  },
+  {
+    title: 'GPA Prediction with Machine Learning',
+    date: 'February 2023',
+    image: '/images/GPAPredict.png',
+    description:
+      "Successfully developed a linear regression based machine learning program in Python to build and train a model that would predict a student's future GPA based on a given dataset.",
   },
 ];
 const personalHobbies = [
   {
     title: 'Hiking and Traveling',
     date: 'Ongoing',
-    image: '/images/your_running_photo.jpg',
+    image: '/images/hiking.png',
     description: 'Visited 5 countries and 10 states, love sight seeing and pushing my limits outdoors.',
   },
   {
     title: 'Brazilian Jiu Jitsu',
     date: 'Since 2023',
-    image: '/images/your_guitar_photo.jpg',
-    description: 'I have been training BJJ for 2 and a half years now at Solidarity Jiu Jitsu in San Jose, CA. I currently have my blue belt and am looking to compete again asap.',
+    image: '/images/bjj.png',
+    description: 'I have been training BJJ for 3 years now at Solidarity Jiu Jitsu in San Jose, CA. I currently have my blue belt and am looking to compete again asap.',
   },
   {
 	title: 'Weightlifting',
 	date: 'Since 2018',
-	image: '/images/your_guitar_photo.jpg',
+	image: '/images/gym.png',
 	description: 'I began lifting weights several years ago, and it became a real passion of mine about 2 years into the journey.',
   },
 ];

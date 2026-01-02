@@ -11,9 +11,16 @@ import { usePortfolioMode } from '../PortfolioModeContext';
 
 const technicalExperiences = [
   {
+    employer: 'Figure AI',
+    role: 'Data Quality Ops',
+    dates: 'September 2025 - Present',
+    location: 'San Jose, CA',
+    image: '/images/Figure-ai.png',
+  },
+  {
     employer: 'Headstarter AI',
     role: 'Software Engineering Fellow',
-    dates: 'June 2025 - Present',
+    dates: 'June 2025 - November 2025',
     location: 'Remote, USA',
     image: '/images/Headstarter.jpeg',
   },
@@ -39,21 +46,21 @@ const personalMemories = [
     role: 'Traveling with family',
     dates: 'December 2021 - January 2022',
     location: 'Switzerland, Italy, France',
-    image: '/images/europe_trip.jpg',
+    image: '/images/matterhorn.jpg',
   },
   {
     employer: 'China Hole Loop Trail',
     role: 'Hiking with friends',
     dates: 'July 2025',
     location: 'Morgan Hill, CA',
-    image: '/images/family_reunion.jpg',
+    image: '/images/chinahole.jpg',
   },
   {
     employer: 'First Jiu Jitsu Competition',
     role: 'Competitor',
     dates: 'June 2023',
     location: 'San Jose, CA',
-    image: '/images/first_jiu_jitsu_competition.jpg',
+    image: '/images/bjjcomp.jpg',
   },
   // ...add more memories
 ];

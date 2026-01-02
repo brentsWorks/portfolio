@@ -106,18 +106,6 @@ export default function MeSection() {
             )}
             {mode === 'personal' && (
               <>
-                {/* TODO: Add YouTube back in */}
-                {/* <IconButton
-                  component="a"
-                  href="https://www.youtube.com/@yourchannel"
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="YouTube"
-                  sx={{ color: theme.palette.primary.main, background: theme.palette.action.hover, '&:hover': { background: theme.palette.primary.main, color: theme.palette.background.paper } }}
-                >
-                  <YouTubeIcon fontSize="large" />
-                </IconButton>
-                */}
                 <IconButton
                   component="a"
                   href="https://www.instagram.com/brentbrison/"
@@ -148,7 +136,7 @@ export default function MeSection() {
             <Tooltip title="Download CV" placement="top">
               <IconButton
                 component="a"
-                href="/images/BrentBrison_Resume.pdf"
+                href="/images/BrentBrison.pdf"
                 download
                 sx={{
                   color: theme.palette.primary.main,
